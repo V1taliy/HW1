@@ -7,8 +7,8 @@ import userProfile.Profile;
  */
 public class User {
 
-    private String username;
-    private String password;
+    private String username = "Lewa";
+    private String password = "123456";
 
     private String name;
     private String rasa;

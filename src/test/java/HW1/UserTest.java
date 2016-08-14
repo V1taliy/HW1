@@ -27,16 +27,37 @@ public class UserTest {
 
     @Test
     public void test1() {
-        Profile profile = new Profile(1, 'M', 500, "slave", false, true);
+        Profile profile = new Profile(53, 'M', 142, "slave", false, true);
         User myUser = new User(profile);
         myUser.setName("Bitch");
-        myUser.setVozrast(500);
+        myUser.setVozrast(32);
         String rasa = myUser.setRasa("Ojaeby");
-        String answer = "BigBitch";
-        Assert.assertEquals(answer, "BigBitch");
+        int answer = 142;
+        Assert.assertEquals(answer, 142.64);
 
         System.out.println("user = " + myUser.toString());
 
 
+    }
+
+    @Test
+    public void test2() {
+        Profile profile = new Profile(167, 'F', 280, "Bysnes analisis", true, false);
+        User myUser2 = new User(profile);
+        myUser2.setName("Oleg");
+        boolean hadPreviousJob = true;
+        Assert.assertEquals(hadPreviousJob, true);
+        System.out.println(myUser2.toString());
+    }
+
+    @Test
+    public void test3() {
+        Profile profile = new Profile(10, 'F', 300, "Web desinger", false, false);
+        User myUser3 = new User(profile);
+        myUser3.setName("Nikita");
+        boolean agreesToTravelAbroad  = false;
+        Assert.assertEquals(agreesToTravelAbroad , true);
+
+        System.out.println(myUser3.toString());
     }
 }
